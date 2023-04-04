@@ -1,3 +1,6 @@
+function Heading(props){
+  return <h1>{props.title}</h1>
+}
 function App() {
   const styles = {
     form:{
@@ -41,7 +44,7 @@ function App() {
   return (
     <div className="App">
     <form className="form" style={styles.form}>
-      <h1 style={styles.heading}>Basic Form Setup</h1>
+      <Heading style={styles.heading} title="Basic Form Setup"/>
       <label for=""> Name :
         <input type="text" style={styles.input}></input>
       </label>
