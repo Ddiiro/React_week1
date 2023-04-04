@@ -12,8 +12,20 @@ function Heading(props){
 }
 
 function Button(props) {
-  
-  return <button type="submit" >{props.button}</button>
+  const buttonStyle = {
+     button: {
+      width: "40%",
+      fontSize: "16px",
+      display:"flex",
+      margin: "auto",
+      padding: "10px",
+      justifyContent: "center",
+      backgroundColor: "aqua",
+      color: "black",
+      borderRadius: "10px",
+    },
+  }
+  return <button type="submit" style = {buttonStyle.button}>{props.button}</button>
 }
 
 function App() {
@@ -36,17 +48,6 @@ function App() {
       marginTop: "10px",
       marginBottom: "10px",
       color: "red",
-    },
-    button: {
-      width: "40%",
-      fontSize: "16px",
-      display:"flex",
-      margin: "auto",
-      padding: "10px",
-      justifyContent: "center",
-      backgroundColor: "aqua",
-      color: "black",
-      borderRadius: "10px",
     },
   };
   return (
