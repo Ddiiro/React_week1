@@ -11,6 +11,11 @@ function Heading(props){
   return <h1 style={HeaderStyle.heading}>{props.title}</h1>
 }
 
+function Button(props) {
+  
+  return <button type="submit" >{props.button}</button>
+}
+
 function App() {
   const styles = {
     form:{
@@ -57,7 +62,7 @@ function App() {
       <label for=""> Contact :
         <input type="contact" style={styles.input}></input>
       </label>
-      <button type="submit" style={styles.button}>Submit</button>
+      <Button button ="Submit" />
     </form>
     </div>
   );
