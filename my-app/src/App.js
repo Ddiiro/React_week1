@@ -1,6 +1,16 @@
 function Heading(props){
-  return <h1>{props.title}</h1>
+  const HeaderStyle = {
+     heading:{
+      color:"black",
+      fontSize: "50px",
+      display:"flex",
+      margin: "auto",
+      justifyContent: "center",
+    },
+  }
+  return <h1 style={HeaderStyle.heading}>{props.title}</h1>
 }
+
 function App() {
   const styles = {
     form:{
@@ -14,13 +24,6 @@ function App() {
       border:"3px solid aqua",
       borderRadius: "5px",
       marginTop: "80px",
-    },
-    heading:{
-      color:"black",
-      fontSize: "30px",
-      display:"flex",
-      margin: "auto",
-      justifyContent: "center",
     },
     input: {
       width: "90%",
@@ -44,7 +47,7 @@ function App() {
   return (
     <div className="App">
     <form className="form" style={styles.form}>
-      <Heading style={styles.heading} title="Basic Form Setup"/>
+      <Heading title="Basic Form Setup"/>
       <label for=""> Name :
         <input type="text" style={styles.input}></input>
       </label>
