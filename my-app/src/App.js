@@ -28,6 +28,10 @@ function Button(props) {
   return <button type="submit" style = {buttonStyle.button}>{props.button}</button>
 }
 
+function Label(props) {
+  return <label>{props.labelName}</label>
+}
+
 function App() {
   const styles = {
     form:{
@@ -54,15 +58,12 @@ function App() {
     <div className="App">
     <form className="form" style={styles.form}>
       <Heading title="Basic Form Setup"/>
-      <label for=""> Name :
+      <Label labelName ="Name :"/>
         <input type="text" style={styles.input}></input>
-      </label>
-      <label for=""> Email :
+        <Label labelName ="Email :"/>
         <input type="email" style={styles.input}></input>
-      </label>
-      <label for=""> Contact :
+        <Label labelName ="Contact :"/>
         <input type="contact" style={styles.input}></input>
-      </label>
       <Button button ="Submit" />
     </form>
     </div>
