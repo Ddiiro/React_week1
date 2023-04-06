@@ -17,6 +17,19 @@ function Button(props) {
   function handleClick(){
     setLikes(likes + 1);
   }
+
+  const ChangeBackgroundColor = {
+    backgroundColor: "black",
+    color: "aqua",
+    width: "40%",
+    fontSize: "16px",
+    display:"flex",
+    margin: "auto",
+    padding: "10px",
+    justifyContent: "center",
+    borderRadius: "10px",
+  }
+
   const buttonStyle = {
      button: {
       width: "40%",
@@ -30,7 +43,9 @@ function Button(props) {
       borderRadius: "10px",
     },
   }
-  return <button type="submit" onClick={handleClick} style = {buttonStyle.button}>{props.button}({likes})</button>
+
+ 
+  return <button type="submit" onClick={handleClick} onMouseOver={handlebackgroundColor} style = {backgroundColor}>{props.button}({likes})</button>
 }
 
 function Label(props) {
