@@ -1,4 +1,4 @@
-import { React } from "react";
+import  React  from 'react';
 function Heading(props){
   const HeaderStyle = {
      heading:{
@@ -11,12 +11,12 @@ function Heading(props){
   }
   return <h1 style={HeaderStyle.heading}>{props.title}</h1>
 }
-function handleClick(){
-  alert("Click");
-}
 
 function Button(props) {
-  const [likes, setLikes] = React.useState();
+  const [likes, setLikes] = React.useState(0);
+  function handleClick(){
+    setLikes(likes + 1);
+  }
   const buttonStyle = {
      button: {
       width: "40%",
@@ -30,7 +30,7 @@ function Button(props) {
       borderRadius: "10px",
     },
   }
-  return <button type="submit" onClick={handleClick} style = {buttonStyle.button}>{props.button}</button>
+  return <button type="submit" onClick={handleClick} style = {buttonStyle.button}>{props.button}({likes})</button>
 }
 
 function Label(props) {
