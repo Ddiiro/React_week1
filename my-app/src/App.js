@@ -10,6 +10,9 @@ function Heading(props){
   }
   return <h1 style={HeaderStyle.heading}>{props.title}</h1>
 }
+function handleClick(){
+  alert("Click");
+}
 
 function Button(props) {
   const buttonStyle = {
@@ -25,7 +28,7 @@ function Button(props) {
       borderRadius: "10px",
     },
   }
-  return <button type="submit" style = {buttonStyle.button}>{props.button}</button>
+  return <button type="submit" onClick={handleClick} style = {buttonStyle.button}>{props.button}</button>
 }
 
 function Label(props) {
