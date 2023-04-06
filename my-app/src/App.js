@@ -44,7 +44,11 @@ function Button(props) {
     },
   }
 
- 
+  const [backgroundColor, setBackgroundColor] = React.useState(buttonStyle.button);
+  function handlebackgroundColor(){
+    setBackgroundColor(ChangeBackgroundColor);
+  }
+  
   return <button type="submit" onClick={handleClick} onMouseOver={handlebackgroundColor} style = {backgroundColor}>{props.button}({likes})</button>
 }
 
