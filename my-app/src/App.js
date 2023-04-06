@@ -1,3 +1,4 @@
+import { React } from "react";
 function Heading(props){
   const HeaderStyle = {
      heading:{
@@ -15,6 +16,7 @@ function handleClick(){
 }
 
 function Button(props) {
+  const [likes, setLikes] = React.useState();
   const buttonStyle = {
      button: {
       width: "40%",
