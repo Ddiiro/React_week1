@@ -97,6 +97,13 @@ function App() {
   };
   return (
     <div className="App">
+      <Formik
+      initialValues={{
+        name: '',
+        email: '',
+        contact: '',
+      }}
+      >
     <form className="form" style={styles.form}>
       <Heading title="Basic Form Setup"/>
       <Label labelName ="Name :"/>
@@ -107,6 +114,7 @@ function App() {
         <input type="contact" style={styles.input}></input>
       <Button button ="Submit" />
     </form>
+    </Formik>
     </div>
   );
 }
