@@ -1,4 +1,13 @@
 import  React  from 'react';
+import * as yup from 'yup';
+
+let formSchema = yup.object().shape({
+  name: yup.string().required(),
+  email: yup.string().email().required(),
+  contact: yup.string().contact().required(),
+});
+
+
 function Heading(props){
   const HeaderStyle = {
      heading:{
