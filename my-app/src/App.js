@@ -8,8 +8,8 @@ let formSchema = yup.object().shape({
   .max(50, 'Name entered is too Long!')
   .required('Name is required'),
   email: yup.string()
-  .email('Invalid email')
-  .required('Required'),
+  .email('An invalid email has been entered')
+  .required('Email is required'),
   contact: yup.string()
   .contact()
   .required('Required'),
