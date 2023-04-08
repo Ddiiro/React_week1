@@ -103,6 +103,7 @@ function App() {
         email: '',
         contact: '',
       }}
+      validationSchema={formSchema}
       >
     <form className="form" style={styles.form}>
       <Heading title="Basic Form Setup"/>
