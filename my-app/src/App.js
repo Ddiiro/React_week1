@@ -108,11 +108,11 @@ function App() {
     <form className="form" style={styles.form}>
       <Heading title="Basic Form Setup"/>
       <Label labelName ="Name :"/>
-        <input type="text" style={styles.input}></input>
+        <input name='name' type="text" style={styles.input}></input>
         <Label labelName ="Email :"/>
-        <input type="email" style={styles.input}></input>
+        <input name='email' type="email" style={styles.input}></input>
         <Label labelName ="Contact :"/>
-        <input type="contact" style={styles.input}></input>
+        <input name='contact' type="contact" style={styles.input}></input>
       <Button button ="Submit" />
     </form>
     </Formik>
