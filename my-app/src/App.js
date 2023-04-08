@@ -11,8 +11,8 @@ let formSchema = yup.object().shape({
   .email('An invalid email has been entered')
   .required('Email is required'),
   contact: yup.string()
-  .contact()
-  .required('Required'),
+  .contact("Please enter a valid contact number")
+  .required('Contact is required'),
 });
 
 
