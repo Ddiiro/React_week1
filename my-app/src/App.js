@@ -104,6 +104,9 @@ function App() {
         contact: '',
       }}
       validationSchema={formSchema}
+      onSubmit={values => {
+        console.log(values);
+      }}
       >
     <form className="form" style={styles.form}>
       <Heading title="Basic Form Setup"/>
