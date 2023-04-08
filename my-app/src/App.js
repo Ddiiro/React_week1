@@ -4,9 +4,9 @@ import { Formik, Form, Field } from 'formik';
 
 let formSchema = yup.object().shape({
   name: yup.string()
-  .min(2, 'Too Short!')
-  .max(50, 'Too Long!')
-  .required('Required'),
+  .min(2, 'Name entered is too Short!')
+  .max(50, 'Name entered is too Long!')
+  .required('Name is required'),
   email: yup.string()
   .email('Invalid email')
   .required('Required'),
