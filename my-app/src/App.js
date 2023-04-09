@@ -1,6 +1,6 @@
 import  React  from 'react';
 import * as yup from 'yup';
-import { Formik, Form, Field } from 'formik';
+import { Formik } from 'formik';
 
 let formSchema = yup.object().shape({
   name: yup.string()
@@ -13,7 +13,6 @@ let formSchema = yup.object().shape({
   contact: yup.string()
   .required('Contact is required'),
 });
-
 
 function Heading(props){
   const HeaderStyle = {
