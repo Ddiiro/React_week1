@@ -118,6 +118,7 @@ function App() {
         {touched.email && errors.email && <div>{errors.email}</div>}
         <Label labelName ="Contact :"/>
         <input name='contact' type="contact" style={styles.input}></input>
+        {touched.contact && errors.contact && <div>{errors.contact}</div>}
       <Button button ="Submit" />
     </form>
     )}
