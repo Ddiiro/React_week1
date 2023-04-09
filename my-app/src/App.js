@@ -11,7 +11,6 @@ let formSchema = yup.object().shape({
   .email('An invalid email has been entered')
   .required('Email is required'),
   contact: yup.string()
-  .contact("Please enter a valid contact number")
   .required('Contact is required'),
 });
 
@@ -108,6 +107,7 @@ function App() {
         console.log(values);
       }}
       >
+      {({ errors, touched }) => (
     <form className="form" style={styles.form}>
       <Heading title="Basic Form Setup"/>
       <Label labelName ="Name :"/>
@@ -118,6 +118,7 @@ function App() {
         <input name='contact' type="contact" style={styles.input}></input>
       <Button button ="Submit" />
     </form>
+    )}
     </Formik>
     </div>
   );
