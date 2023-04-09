@@ -112,6 +112,7 @@ function App() {
       <Heading title="Basic Form Setup"/>
       <Label labelName ="Name :"/>
         <input name='name' type="text" style={styles.input}></input>
+        {touched.name && errors.name && <div>{errors.name}</div>}
         <Label labelName ="Email :"/>
         <input name='email' type="email" style={styles.input}></input>
         <Label labelName ="Contact :"/>
