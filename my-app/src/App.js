@@ -115,6 +115,7 @@ function App() {
         {touched.name && errors.name && <div>{errors.name}</div>}
         <Label labelName ="Email :"/>
         <input name='email' type="email" style={styles.input}></input>
+        {touched.email && errors.email && <div>{errors.email}</div>}
         <Label labelName ="Contact :"/>
         <input name='contact' type="contact" style={styles.input}></input>
       <Button button ="Submit" />
